@@ -119,7 +119,7 @@ class _SplashScreenState extends State<SplashScreen> {
                               decoration: BoxDecoration(
                                 color: _currentIndex == index
                                     ? Colors.black
-                                    : Colors.grey,
+                                    : Colors.black,
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                             );
