@@ -91,7 +91,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 16),
+                        Spacer(),
                         Text(
                           splashData[_currentIndex]['description1']!,
                           style: TextStyle(fontSize: 16),
@@ -125,7 +125,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             );
                           }),
                         ),
-                        SizedBox(height: 24),
+                        Spacer(),
                         ElevatedButton(
                           onPressed: () {
                             // Navigate to another screen if needed
