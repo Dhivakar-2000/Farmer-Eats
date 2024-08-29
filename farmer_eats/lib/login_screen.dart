@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'signup_screen.dart';  // Import the sign-up screen
 import 'forgot_password_screen.dart';  // Import the forgot password screen
+import 'splash_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -138,7 +139,12 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () {
-                  // Handle login
+                 Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SplashScreen(),
+                        ),
+                      );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFFD5715B), // Set color to #D5715B
