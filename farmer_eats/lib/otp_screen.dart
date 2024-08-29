@@ -105,10 +105,10 @@ class _OtpScreenState extends State<OtpScreen> {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: List.generate(5, (index) {
+                      children: List.generate(6, (index) {
                         return SizedBox(
-                          width: 60,
-                          height: 60,
+                          width: 55,
+                          height: 55,
                           child: TextField(
                             controller: _controllers[index],
                             focusNode: _focusNodes[index],
@@ -135,7 +135,7 @@ class _OtpScreenState extends State<OtpScreen> {
                         );
                       }),
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 30),
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(
